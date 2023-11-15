@@ -1,6 +1,7 @@
 use std::cmp::{min, max};
 use crate::Board;
 
+//the meat and paterders of this tic tac toe game. This scores a move for the computer player
 pub fn minimax(node: Board, is_maximizing_player: bool) -> i32 {
     if node.is_terminal() {
         return node.heuristic_value();
