@@ -1,15 +1,14 @@
 use std::fmt;
 
-
-//this is what occupies a position on the grid
+///this is what occupies a position on the grid
 #[derive(PartialEq, Clone)]
 pub enum BoardValue {
     EMPTY,
-    X, //maximizing
-    O, //minimizing
+    X,
+    O,
 }
 
-//make sure boardvalue can be printed on screen
+///make sure boardvalue can be printed on screen
 impl fmt::Debug for BoardValue {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> Result<(), std::fmt::Error> {
         match self {
