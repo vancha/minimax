@@ -35,4 +35,5 @@ pub fn minimax(node: Board, is_maximizing_player: bool) -> i32 {
         }
         return val;
     }
-}```
+}
+```
